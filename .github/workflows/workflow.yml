@@ -3,7 +3,6 @@ on:
   push:
     branches:
     - master
-on: 
   repository_dispatch:
     types: sub_commit
 jobs:

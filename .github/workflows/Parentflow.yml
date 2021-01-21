@@ -4,13 +4,12 @@ on:
   repository_dispatch:
     types: sub_commit
 jobs:
-  needs: workflow
-  # build:
-    # runs-on: ubuntu-latest
-    # steps:
-    # - uses: actions/checkout@v1
-    # - name: dispatch trigger
-      # #if: github.event.action == "my-event"
-      # run: |
-        # echo "repository_dispatch triggered"
-        # echo github.event.action
+  build:
+     runs-on: ubuntu-latest
+     steps:
+     - uses: actions/checkout@v1
+     - name: dispatch trigger
+       #if: github.event.action == "my-event"
+       run: |
+         echo "repository_dispatch triggered"
+         echo github.event.action

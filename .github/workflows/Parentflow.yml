@@ -2,7 +2,7 @@ name: dispatch receiver
 
 on: 
   repository_dispatch:
-    types: my-event11
+    types: sub_commit
 jobs:
   build:
     runs-on: ubuntu-latest

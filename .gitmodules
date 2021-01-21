@@ -1,3 +1,0 @@
-[submodule "ChildRepo"]
-	path = ChildRepo
-	url = https://github.com/lujiansong/ChildRepo.git
